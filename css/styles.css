@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+@font-face {
+    font-family: 'blend';
+    src: url(Fonts/Blending-rgjzK.otf);
+}
+
+/* Applies to the all body */
+body {
+
+    background: url(images/agilityAlchemistBg.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* Applies to the all the form */
+.container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.090);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* applies to any H2 tag in any form*/
+form h2,
+h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+/* applies to the input group class */
+.input-group {
+    position: relative;
+    margin: 35px auto 0;
+    width: 320px;
+}
+
+/* applies to any input tag in the input-group*/
+.input-group input {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 0px;
+    background: transparent;
+    border-bottom: 2px solid white;
+
+}
+
+/* applies to any label class in the input group */
+.input-group .label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: aliceblue;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* applies to the input tags in the input group while typing and while inputs are valid
+ */
+.input-group input:focus~.label,
+.input-group input:valid~.label {
+    top: -20px;
+    font-size: 13px;
+    color: antiquewhite;
+
+}
+
+/* applies to the checkbox title */
+.check label {
+    margin: 20px 0;
+    display: flex;
+    font-size: 14px;
+    color: white;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+/* Applies to the checkbox itself
+ */
+.check label input {
+    position: absolute;
+    appearance: none;
+    left: 0;
+}
+
+/* checkbox before checking
+ */
+.check label input::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+/* checkbox after checking
+ */
+.check label input:checked::before {
+    content: '\2714';
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* applies to any button in form
+ */
+form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    padding: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* applies when any button in form is hovered
+ */
+form button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* applies to the .sign-in */
+.sign-in {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* applies to the P element in the sign in class
+ */
+.sign-in p {
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.sign-in p a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.sign-in p a:hover {
+    color: rgb(243, 69, 170);
+    transition: 0.3s;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-size: 15px;
+    text-shadow: 2px 5px 5px black;
+}
+footer a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+footer a:hover{
+color :rgb(243,69,170);
+transition: 0.6s;
+}
